@@ -1,0 +1,4 @@
+Exception thrown while checking the message "Your Account Has Been Created!" in register page,Error: locator.textContent: Target page, context or browser has been closed
+Call log:
+  - waiting for getByText('Your Account Has Been Created!')
+

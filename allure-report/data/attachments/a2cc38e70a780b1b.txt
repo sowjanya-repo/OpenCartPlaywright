@@ -1,0 +1,4 @@
+Exception occured while clicking on "Login",Error: locator.click: Unexpected token "" while parsing css selector "ul.dropdown-menu a:has-text('Login)". Did you mean to CSS.escape it?
+Call log:
+  - waiting for ul.dropdown-menu a:has-text('Login)
+

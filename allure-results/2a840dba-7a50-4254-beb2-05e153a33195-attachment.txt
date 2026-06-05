@@ -1,0 +1,2 @@
+Exception occured while clicking on "Login button",Error: locator.click: Target page, context or browser has been closed
+Error checking My Account page heading visibility: Error: locator.isVisible: Target page, context or browser has been closed

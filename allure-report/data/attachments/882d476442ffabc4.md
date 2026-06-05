@@ -1,0 +1,118 @@
+# Instructions
+
+- Following Playwright test failed.
+- Explain why, be concise, respect Playwright best practices.
+- Provide a snippet of code with the fix, if possible.
+
+# Test info
+
+- Name: LoginDataProvider.spec.ts >> Login test with CSVData Valid login @datadriven
+- Location: tests\LoginDataProvider.spec.ts:61:8
+
+# Error details
+
+```
+Error: expect(received).toBeTruthy()
+
+Received: false
+```
+
+```
+Error: page.waitForTimeout: Target page, context or browser has been closed
+```
+
+# Test source
+
+```ts
+  1  | import{test,expect} from '@playwright/test';
+  2  | 
+  3  | import { HomePage } from '../pages/HomePage';
+  4  | import{ LoginPage} from '../pages/LoginPage.ts';
+  5  | import { TestConfig } from '../test.config';
+  6  | import { MyAccountPage } from '../pages/MyAccountPage.ts';
+  7  | import {dataProvider} from '../utils/dataProvider.ts';
+  8  | 
+  9  |  const jsonFilePath="testData/logindata.json";
+  10 |  const jsonTestData= dataProvider.getTestDataFromJson(jsonFilePath);
+  11 | 
+  12 |  const csvFilePath="testData/logindata.csv";
+  13 |  const csvFileData=dataProvider.getTestDataFromCsv(csvFilePath);
+  14 | 
+  15 |     let homePage:HomePage;
+  16 |     let myAccountPage:MyAccountPage;
+  17 |     let loginPage:LoginPage;
+  18 |     let testConfig:TestConfig;
+  19 | 
+  20 |  test.beforeEach(async({page})=>{
+  21 |     homePage=new HomePage(page);
+  22 |     myAccountPage=new MyAccountPage(page);
+  23 |     loginPage=new LoginPage(page);
+  24 |     testConfig=new TestConfig();
+  25 |     await page.goto(testConfig.appUrl);
+  26 |     
+  27 |  })
+  28 | 
+  29 |  //Load data from Json file
+  30 | 
+  31 |  for(const data of jsonTestData){
+  32 | 
+  33 |     test(`Login Test with Json data: ${data.testName} @datadriven`,async()=>{
+  34 | 
+  35 |         expect(await homePage.isHomePageExist()).toBeTruthy();
+  36 |         await homePage.clickMyAccount();
+  37 |         await homePage.clickLogin();
+  38 | 
+  39 |         await loginPage.enterEmailAddress(data.email);
+  40 |         await loginPage.enterPassword(data.password);
+  41 |         await loginPage.clickLogin();
+  42 | 
+  43 |         
+  44 | 
+  45 |         if(data.expected.toLowerCase()==='success'){
+  46 |             const isLoggedIn=await myAccountPage.checkIsthisMyAccountPage();
+  47 |             expect(isLoggedIn).toBeTruthy();
+  48 |         }else{
+  49 | 
+  50 |            const loginError=await loginPage.getLoginErrorMessage();
+  51 |            expect(loginError).toBe(' Warning: No match for E-Mail Address and/or Password.')
+  52 |         }
+  53 | 
+  54 |     })
+  55 |  }
+  56 | 
+  57 |  //Load data from CSV file
+  58 | 
+  59 |  for(const data of csvFileData){
+  60 | 
+  61 |    test(`Login test with CSVData ${data.testName} @datadriven`,async ()=>{
+  62 | 
+  63 |       expect(await homePage.isHomePageExist()).toBeTruthy();
+  64 |       await homePage.clickMyAccount();
+  65 |       await homePage.clickLogin();
+  66 | 
+  67 |       expect(await loginPage.isLoginPageExist()).toBeTruthy();
+  68 |       await loginPage.enterEmailAddress(data.email);
+  69 |       await loginPage.enterPassword(data.password);
+  70 |       await loginPage.clickLogin();
+  71 | 
+  72 |       if(data.expected.toLowerCase()==='success'){
+  73 | 
+  74 |          const isLoggedIn=await myAccountPage.checkIsthisMyAccountPage();
+  75 |          expect(isLoggedIn).toBeTruthy();
+  76 |       }else{
+  77 | 
+  78 |          const loginError=await loginPage.getLoginErrorMessage();
+  79 |          expect(loginError).toBe(' Warning: No match for E-Mail Address and/or Password.')
+  80 |       }
+  81 |    })
+  82 |  }
+  83 | 
+  84 |  test.afterEach(async({page})=>{
+  85 | 
+> 86 |     await page.waitForTimeout(3000);
+     |                ^ Error: page.waitForTimeout: Target page, context or browser has been closed
+  87 |     await page.close();
+  88 | 
+  89 | 
+  90 |  })
+```

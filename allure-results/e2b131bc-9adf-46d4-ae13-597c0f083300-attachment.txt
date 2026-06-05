@@ -1,0 +1,11 @@
+{
+  bookingid: 3216,
+  booking: {
+    firstname: 'Vaughn',
+    lastname: 'Boehm',
+    totalprice: 100,
+    depositpaid: true,
+    bookingdates: { checkin: '0NaN-aN-aN', checkout: '0NaN-aN-aN' },
+    additionalneeds: 'super bowls'
+  }
+}

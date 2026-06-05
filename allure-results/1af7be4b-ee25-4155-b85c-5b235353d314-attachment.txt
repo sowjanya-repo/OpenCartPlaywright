@@ -1,0 +1,11 @@
+Exception occured while clicking on "Login",Error: locator.click: Unexpected token "" while parsing css selector "ul.dropdown-menu a:has-text('Login)". Did you mean to CSS.escape it?
+Call log:
+  - waiting for ul.dropdown-menu a:has-text('Login)
+
+Exception occured while entering on "email id",Error: locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for getByPlaceholder('E-Mail Address')
+
+Exception occured while entering on "Passsword",Error: locator.fill: Target page, context or browser has been closed
+Exception occured while clicking on "Login button",Error: locator.click: Target page, context or browser has been closed
+Error checking My Account page heading visibility: Error: locator.isVisible: Target page, context or browser has been closed

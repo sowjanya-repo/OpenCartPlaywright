@@ -1,0 +1,19 @@
+✅ Registration is completed!
+✅ Logout is completed!
+✅ Login is completed!
+✅ Product added to cart!
+🛒 Navigated to shopping cart!
+Unable to retrieve total price: Error: locator.textContent: SyntaxError: Failed to execute 'matches' on 'Element': 'td:has-test("Total")' is not a valid selector.
+    at SelectorEvaluatorImpl._matchesCSS (<anonymous>:5255:20)
+    at <anonymous>:5127:31
+    at SelectorEvaluatorImpl._cached (<anonymous>:5048:20)
+    at SelectorEvaluatorImpl._matchesSimple (<anonymous>:5124:17)
+    at <anonymous>:5191:20
+    at SelectorEvaluatorImpl._cached (<anonymous>:5048:20)
+    at SelectorEvaluatorImpl._matchesParents (<anonymous>:5174:17)
+    at <anonymous>:5087:54
+    at Array.filter (<anonymous>)
+    at <anonymous>:5087:29
+Call log:
+  - waiting for locator('table.table-bordered tr td:has-test(\'Total\') td')
+

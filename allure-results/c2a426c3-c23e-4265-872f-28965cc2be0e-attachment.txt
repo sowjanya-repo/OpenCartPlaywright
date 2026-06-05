@@ -1,0 +1,11 @@
+{
+  bookingid: 3234,
+  booking: {
+    firstname: 'Percy',
+    lastname: 'Auer-Romaguera',
+    totalprice: 100,
+    depositpaid: false,
+    bookingdates: { checkin: '0NaN-aN-aN', checkout: '0NaN-aN-aN' },
+    additionalneeds: 'super bowls'
+  }
+}

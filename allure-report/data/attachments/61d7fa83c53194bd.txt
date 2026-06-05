@@ -1,0 +1,11 @@
+Exception thrown while entering "Last Name" in register page,Error: locator.fill: Target page, context or browser has been closed
+Call log:
+  - waiting for getByPlaceholder('Last Name').nth(1)
+
+Exception thrown while entering "Email Id" in register page,Error: locator.fill: Target page, context or browser has been closed
+Exception thrown while entering "Telephone no" in register page,Error: locator.fill: Target page, context or browser has been closed
+Exception thrown while entering "Password" in register page,Error: locator.fill: Target page, context or browser has been closed
+Exception thrown while entering "Confirm Password" in register page,Error: locator.fill: Target page, context or browser has been closed
+Exception thrown while checking "Privacy Policy" in register page,Error: locator.check: Target page, context or browser has been closed
+Exception thrown while clicking "Continue" in register page,Error: locator.click: Target page, context or browser has been closed
+Exception thrown while checking the message "Your Account Has Been Created!" in register page,Error: locator.textContent: Target page, context or browser has been closed
