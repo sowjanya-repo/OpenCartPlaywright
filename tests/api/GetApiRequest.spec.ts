@@ -16,8 +16,6 @@ test('Get booking details by ID-path paramenter ',async ({request})=>{
     expect(response.ok()).toBeTruthy();
     expect(response.status()).toBe(200);
 
-    
-
 })
 
 test.only('Get booking details by Name- query params', async ({ request }) => {
