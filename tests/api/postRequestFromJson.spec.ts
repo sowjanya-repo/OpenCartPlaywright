@@ -6,7 +6,6 @@ test('Create post request with json file body',async ({request})=>{
     //read data from json (request body)
     const jsonFile="testData/post_request_body.json";
     const requestBody=JSON.parse(fs.readFileSync(jsonFile,'utf-8'));
-+
     //send post request
 
     const response=await request.post('/booking',{data:requestBody});

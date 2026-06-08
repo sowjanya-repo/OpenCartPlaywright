@@ -1,0 +1,13 @@
+{
+  bookingid: 3299,
+  booking: {
+    firstname: 'Kevin',
+    lastname: 'DuBuque',
+    totalprice: 783,
+    depositpaid: false,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 3299
+Token===> 5cb6678b16a6534

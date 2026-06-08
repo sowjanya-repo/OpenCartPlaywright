@@ -1,0 +1,13 @@
+{
+  bookingid: 1041,
+  booking: {
+    firstname: 'Ross',
+    lastname: 'Hackett',
+    totalprice: 481,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 1041
+Token===> 7516682e922f16a

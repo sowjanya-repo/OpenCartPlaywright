@@ -1,0 +1,11 @@
+{
+  bookingid: 1004,
+  booking: {
+    firstname: 'Clarence',
+    lastname: 'Parker',
+    totalprice: 746,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}

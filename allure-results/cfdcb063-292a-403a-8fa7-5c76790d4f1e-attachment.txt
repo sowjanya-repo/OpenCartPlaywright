@@ -1,0 +1,22 @@
+{
+  bookingid: 1723,
+  booking: {
+    firstname: 'Benny',
+    lastname: 'Fay',
+    totalprice: 406,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 1723
+Token===> 974c246b0a89080
+{
+  firstname: 'Scott',
+  lastname: 'Tiger',
+  totalprice: 406,
+  depositpaid: true,
+  bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+  additionalneeds: 'mango'
+}
+Booking details Patch updated successfully===> 

@@ -1,0 +1,12 @@
+{
+  bookingid: 2867,
+  booking: {
+    firstname: 'Janice',
+    lastname: 'Wisozk',
+    totalprice: 274,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 2867

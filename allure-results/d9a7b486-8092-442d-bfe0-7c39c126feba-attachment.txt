@@ -1,0 +1,13 @@
+{
+  bookingid: 1679,
+  booking: {
+    firstname: 'Jim',
+    lastname: 'Brown',
+    totalprice: 1000,
+    depositpaid: true,
+    bookingdates: { checkin: '2025-07-01', checkout: '2025-07-05' },
+    additionalneeds: 'super bowls'
+  }
+}
+Booking id===> 1679
+Token===> c641ad35f22b1ff

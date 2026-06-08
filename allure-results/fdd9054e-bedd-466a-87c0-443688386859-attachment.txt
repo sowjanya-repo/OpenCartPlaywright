@@ -1,0 +1,12 @@
+{
+  bookingid: 2837,
+  booking: {
+    firstname: 'Pierce',
+    lastname: 'Kihn-Pollich',
+    totalprice: 587,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 2837

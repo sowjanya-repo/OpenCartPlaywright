@@ -1,0 +1,13 @@
+{
+  bookingid: 1010,
+  booking: {
+    firstname: 'Ethelyn',
+    lastname: 'Emmerich',
+    totalprice: 559,
+    depositpaid: true,
+    bookingdates: { checkin: '2026-06-08', checkout: '2026-06-13' },
+    additionalneeds: 'Super bowls'
+  }
+}
+Booking Id====> 1010
+Token===> a885f57c391169d
