@@ -75,8 +75,6 @@ test('Create a patch request using faker',async({request})=>{
 
     console.log(patchResponseBody);
     console.log('Booking details Patch updated successfully===> ');
-    
-    
-    
+
     
 })
