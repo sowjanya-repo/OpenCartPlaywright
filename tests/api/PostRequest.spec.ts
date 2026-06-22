@@ -51,7 +51,4 @@ test('test post request using static data',async ({request})=>{
 
    })
 
-
-
-
 })

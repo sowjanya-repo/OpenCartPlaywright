@@ -1,0 +1,24 @@
+{
+  coord: { lon: 77.2167, lat: 28.6667 },
+  weather: [ { id: 800, main: 'Clear', description: 'clear sky', icon: '01d' } ],
+  base: 'stations',
+  main: {
+    temp: 312.73,
+    feels_like: 312.86,
+    temp_min: 312.73,
+    temp_max: 312.73,
+    pressure: 1004,
+    humidity: 23,
+    sea_level: 1004,
+    grnd_level: 979
+  },
+  visibility: 10000,
+  wind: { speed: 2.03, deg: 304, gust: 3.37 },
+  clouds: { all: 3 },
+  dt: 1781593534,
+  sys: { country: 'IN', sunrise: 1781567578, sunset: 1781617837 },
+  timezone: 19800,
+  id: 1273294,
+  name: 'Delhi',
+  cod: 200
+}

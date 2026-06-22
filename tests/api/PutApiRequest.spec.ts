@@ -66,7 +66,4 @@ test('Create a put request using json file path',async ({request})=>{
     console.log(updateRequestBody);
     console.log('Booking details updated successfully...');
     
-    
-    
-
 })
